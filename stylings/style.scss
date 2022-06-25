@@ -17,14 +17,17 @@ body {
         display: flex;
         align-items: center;
 
+        ::selection {
+            color: white;
+            background-color: rgb(0, 255, 225);
+        }
+
         ul {
             display: flex;
             align-items: center;
 
             h1 {
                 font-size: 2rem;
-                font-weight: 1000;
-                cursor: pointer;
             }
 
             .links {
@@ -32,7 +35,8 @@ body {
                 align-items: center;
                 justify-content: center;
                 margin-left: 4rem;
-                font-size: 1.3rem;
+                font-size: 1.1rem;
+
 
                 .nav-link {
                     color: $black;
@@ -45,47 +49,11 @@ body {
                         color: $black;
                     }
                 }
-
-                .dropdown {
-                    margin-left: 0.9rem;
-                    list-style: none;
-                    text-decoration: none;
-
-                    a {
-                        list-style: none;
-                        text-decoration: none;
-                        color: $black;
-                    }
-
-                    .drops {
-                        display: none;
-
-                        li {
-                            color: $black;
-                            margin-left: 1rem;
-                        }
-                    }
-
-                    &:hover {
-
-                        .drops {
-                            list-style: none;
-                            text-decoration: none;
-                            margin-left: 3rem;
-                            margin-top: 0;
-                            background-color: $white;
-                            height: 5rem;
-                            width: 40rem;
-                            border-radius: 2rem;
-                            display: block;
-
-                            li {
-                                color: $black;
-                                margin-left: 1rem;
-                            }
-                        }
-                    }
-                }
+            }
+            .form{
+                display: flex;
+                justify-content: end;
+                align-items: center;
             }
         }
     }
