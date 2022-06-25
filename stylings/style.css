@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container {
+  height: 20px;
+}
+body .container h1 {
+  font-size: 3rem;
+}/*# sourceMappingURL=style.css.map */
