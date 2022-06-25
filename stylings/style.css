@@ -4,48 +4,88 @@
   box-sizing: border-box;
 }
 
-body nav.navbar {
+body nav,
+body .navbar {
   height: 4rem;
+  position: relaive;
   width: 100%;
   background-color: whitesmoke;
   color: black;
   display: flex;
   align-items: center;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
-body nav.navbar ::-moz-selection {
+body nav ::-moz-selection, body .navbar ::-moz-selection {
   color: white;
   background-color: rgb(0, 255, 225);
 }
-body nav.navbar ::selection {
+body nav ::selection,
+body .navbar ::selection {
   color: white;
   background-color: rgb(0, 255, 225);
 }
-body nav.navbar ul {
+body nav ul,
+body .navbar ul {
   display: flex;
-  align-items: center;
 }
-body nav.navbar ul h1 {
+body nav ul h1,
+body .navbar ul h1 {
   font-size: 2rem;
+  cursor: pointer;
 }
-body nav.navbar ul .links {
+body nav ul .links,
+body .navbar ul .links {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 4rem;
+  margin-left: 2rem;
   font-size: 1.1rem;
 }
-body nav.navbar ul .links .nav-link {
+body nav ul .links .nav-link,
+body .navbar ul .links .nav-link {
   color: black;
   list-style: none;
   margin-left: 0.9rem;
   text-decoration: none;
 }
-body nav.navbar ul .links .nav-link a {
+body nav ul .links .nav-link a,
+body .navbar ul .links .nav-link a {
   text-decoration: none;
   color: black;
 }
-body nav.navbar ul .form {
+body nav .form,
+body .navbar .form {
   display: flex;
   justify-content: end;
-  align-items: center;
+  margin-left: auto;
+}
+body nav .form .input,
+body .navbar .form .input {
+  width: 15rem;
+  border: 1px solid rgba(41, 42, 41, 0.466);
+  border-radius: 20px;
+  margin: 5px;
+  font-size: x-large;
+}
+body nav .form .btn-success,
+body .navbar .form .btn-success {
+  height: 2.5rem;
+  width: 5rem;
+  background-color: rgb(0, 255, 225);
+  border: 1px solid rgba(41, 42, 41, 0.466);
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 5px;
+}
+body .h1 {
+  margin-top: 2rem;
+}
+body .image {
+  height: 20rem;
+  width: 20rem;
+  -webkit-animation: pic 3s ease infinite;
+          animation: pic 3s ease infinite;
+}
+body .disable {
+  cursor: not-allowed;
 }/*# sourceMappingURL=style.css.map */
