@@ -1,11 +1,65 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body .container {
-  height: 20px;
+
+body nav.navbar {
+  height: 4rem;
+  width: 100%;
+  background-color: whitesmoke;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
 }
-body .container h1 {
-  font-size: 3rem;
+body nav.navbar ul {
+  display: flex;
+  align-items: center;
+}
+body nav.navbar ul h1 {
+  font-size: 2rem;
+  font-weight: 1000;
+  cursor: pointer;
+}
+body nav.navbar ul .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4rem;
+  font-size: 1.3rem;
+}
+body nav.navbar ul .links .nav-link {
+  color: black;
+  list-style: none;
+  margin-left: 0.9rem;
+  text-decoration: none;
+}
+body nav.navbar ul .links .nav-link a {
+  text-decoration: none;
+  color: black;
+}
+body nav.navbar ul .links .dropdown {
+  margin-left: 0.9rem;
+  list-style: none;
+  text-decoration: none;
+}
+body nav.navbar ul .links .dropdown a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+body nav.navbar ul .links .dropdown .drops {
+  list-style: none;
+  text-decoration: none;
+  margin-left: 3rem;
+  margin-top: 0;
+  background-color: #ffffff;
+  height: 5rem;
+  width: 40rem;
+  border-radius: 2rem;
+  display: none;
+}
+body nav.navbar ul .links .dropdown .drops li {
+  color: black;
+  margin-left: 1rem;
 }/*# sourceMappingURL=style.css.map */
