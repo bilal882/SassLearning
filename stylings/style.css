@@ -8,7 +8,7 @@ body nav.navbar {
   height: 4rem;
   width: 100%;
   background-color: whitesmoke;
-  color: rgb(0, 0, 0);
+  color: black;
   display: flex;
   align-items: center;
 }
@@ -49,17 +49,24 @@ body nav.navbar ul .links .dropdown a {
   color: black;
 }
 body nav.navbar ul .links .dropdown .drops {
+  display: none;
+}
+body nav.navbar ul .links .dropdown .drops li {
+  color: black;
+  margin-left: 1rem;
+}
+body nav.navbar ul .links .dropdown:hover .drops {
   list-style: none;
   text-decoration: none;
   margin-left: 3rem;
   margin-top: 0;
-  background-color: #ffffff;
+  background-color: white;
   height: 5rem;
   width: 40rem;
   border-radius: 2rem;
-  display: none;
+  display: block;
 }
-body nav.navbar ul .links .dropdown .drops li {
+body nav.navbar ul .links .dropdown:hover .drops li {
   color: black;
   margin-left: 1rem;
 }/*# sourceMappingURL=style.css.map */

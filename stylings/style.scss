@@ -1,3 +1,7 @@
+// import URL("Boostrap.css");
+$black: black;
+$white: white;
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +13,7 @@ body {
         height: 4rem;
         width: 100%;
         background-color: whitesmoke;
-        color: rgb(0, 0, 0);
+        color: $black;
         display: flex;
         align-items: center;
 
@@ -31,14 +35,14 @@ body {
                 font-size: 1.3rem;
 
                 .nav-link {
-                    color: black;
+                    color: $black;
                     list-style: none;
                     margin-left: 0.9rem;
                     text-decoration: none;
 
                     a {
                         text-decoration: none;
-                        color: black;
+                        color: $black;
                     }
                 }
 
@@ -50,22 +54,35 @@ body {
                     a {
                         list-style: none;
                         text-decoration: none;
-                        color: black;
+                        color: $black;
                     }
 
                     .drops {
-                        list-style: none;
-                        text-decoration: none;
-                        margin-left: 3rem;
-                        margin-top: 0;
-                        background-color: #ffffff;
-                        height: 5rem;
-                        width: 40rem;
-                        border-radius: 2rem;
                         display: none;
+
                         li {
-                            color: black;
+                            color: $black;
                             margin-left: 1rem;
+                        }
+                    }
+
+                    &:hover {
+
+                        .drops {
+                            list-style: none;
+                            text-decoration: none;
+                            margin-left: 3rem;
+                            margin-top: 0;
+                            background-color: $white;
+                            height: 5rem;
+                            width: 40rem;
+                            border-radius: 2rem;
+                            display: block;
+
+                            li {
+                                color: $black;
+                                margin-left: 1rem;
+                            }
                         }
                     }
                 }
